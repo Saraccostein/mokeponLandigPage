@@ -1,0 +1,73 @@
+/* Whyte */
+
+@font-face
+{
+  font-family: 'Whyte';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('Whyte-Regular.woff2') format('woff2'),
+       url('Whyte-Regular.woff') format('woff');
+}
+@font-face
+{
+  font-family: 'Whyte';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('Whyte-Bold.woff2') format('woff2'),
+       url('Whyte-Bold.woff') format('woff');
+}
+
+/* Whyte Inktrap */
+
+@font-face
+{
+  font-family: 'Whyte Inktrap';
+  font-style: normal;
+  font-weight: normal;
+  src: url('WhyteInktrap-Light.woff2') format('woff2'),
+       url('WhyteInktrap-Light.woff') format('woff');
+}
+@font-face
+{
+  font-family: 'Whyte Inktrap';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('WhyteInktrap-Bold.woff2') format('woff2'),
+       url('WhyteInktrap-Bold.woff') format('woff');
+}
+
+/* Associate Mono */
+
+@font-face
+{
+  font-family: 'Associate Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('AssociateMono-Regular.woff2') format('woff2'),
+       url('AssociateMono-Regular.woff') format('woff');
+}
+@font-face
+{
+  font-family: 'Associate Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('AssociateMono-Bold.woff2') format('woff2'),
+       url('AssociateMono-Bold.woff') format('woff');
+}
+
+/* Inter */
+
+@font-face
+{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('Inter-SemiBold.woff2') format('woff2'),
+       url('Inter-SemiBold.woff') format('woff');
+}

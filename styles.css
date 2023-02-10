@@ -1,0 +1,149 @@
+:root {
+
+    /* 🎨 Colors */
+    --nav_dark:  hsla(229,  16%, 14%, 0.9);
+    --night:     hsla(231,  15%, 18%,   1);
+    --gray:      hsla(232,  14%, 31%,   1);
+    --amethyst:  hsla(269,  94%, 64%,   1);
+    --purple:    hsla(265,  89%, 78%,   1);
+    --blue:      hsla(228,  82%, 61%,   1);
+    --green:     hsla(165,  72%, 56%,   1);
+    --red:       hsla(360,  61%, 63%,   1);
+    --red_heart: hsla(360, 100%, 74%,   1);
+    --yellow:    hsla( 65,  92%, 76%,   1);
+    --white:     hsla( 60,  30%, 96%,   1);
+
+    --margin: 1.2rem;
+    --navPaddig: 1.8rem;
+    --navImgPaddig: 0.6rem;
+    --subButton: 19rem;
+}
+
+body {
+    background-color: var(--night);
+    color: var(--purple);
+    font-family: 'Whyte Inktrap';
+}
+
+.wrap { 
+    width: 1400px;
+    margin: auto;
+}
+
+/* Menú */
+nav {
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-size: 'Whyte Inktrap';
+    /* background-image: linear-gradient(var(--night), hsla(0, 0%, 0%, 0)); */
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 1000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navButton > img {
+    margin-top: -1rem;
+    width: 4rem;
+    vertical-align: middle;
+    outline: none;
+    margin: 0 auto;
+    padding: 0 1.5rem 0 0.4rem;
+}
+
+.navText {
+    padding-right: var(--navPaddig);
+}
+
+.navButton {
+    height: 4.5rem;
+    list-style-type: none;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 7rem;
+    padding: 0.6rem;
+    margin: 0 var(--margin) 0 var(--margin);
+}
+
+.navButton:hover {
+    background-color: var(--blue);
+}
+
+#playButton {
+    font-family: 'Whyte', sans-serif;
+    background-image: linear-gradient(to right, var(--green), var(--red));
+    color: var(--night);
+}
+
+#newsButton {
+    background-color: var(--nav_dark);
+    color: var(--purple);
+    font-family: 'Whyte Inktrap', monospace;
+    width: var(--subButton);
+}
+
+#sourceButton {
+    background-color: var(--nav_dark);
+    color: var(--purple);
+    font-family: 'Whyte Inktrap', monospace;
+    width: var(--subButton);
+}
+
+/* Descripción */
+h1 {
+    font-size: 6rem;
+}
+
+#presentation {
+    float: inline-start;
+}
+
+#title {
+    margin-bottom: 0;
+    width: 40rem;
+}
+
+#overview {
+    font-family: 'Associate Mono', monospace;
+    font-size: 3rem;
+    color: var(--white);
+    width: 40rem;
+    line-height: 3rem;
+    margin-top: 0;
+}
+
+#mokecards {
+    width: 40rem;
+    float: inline-end;
+    margin-top: 10rem;
+}
+
+#playSection {
+    padding-top: 4rem;
+}
+
+/* News */
+h2 {
+    font-size: 7rem;
+}
+#enterate {
+    color: var(--yellow);
+}
+
+.check {
+    font-family: 'Whyte Inktrap', monospace;
+    color: var(--white);
+}
+
+#submit {
+    font-family: 'Whyte', sans-serif;
+    color: var(--night);
+    background-color: var(--purple);
+    border-radius: 0.2rem;
+
+}

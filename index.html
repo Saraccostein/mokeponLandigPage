@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Info -->
+        <meta name= "author"      content="Maro Saracco"                                        >
+        <meta name= "description" content="Colecciona monstruos y vive intensas batallas"       >
+        <meta name= "keywords"    content="mokepon monstruos bolsillo juego open source"        >
+
+        <meta name= "viewport"             content="width=device-width, initial-scale=1.0"      >
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"                                    >
+
+        <!-- Social Media -->
+        <meta property="og:title"       content="Mokepon"                                       >
+        <meta property="og:description" content="Colecciona monstruos y vive intensas batallas" >
+
+        <!-- Custome -->
+        <link rel="shortcut icon" href="assets/svg/"     type="img/svg"                         >
+        <link rel="stylesheet"    href="styles.css"      type="text/css"                        >
+
+        <!-- Fonts -->
+        <link rel="stylesheet"    href="fonts/fonts.css" type="text/css"                        >
+
+        <title>Mokepon</title>
+
+    </head>
+    <body>
+
+        <div id="wrap">
+        
+        <!-- Menú -->
+        <nav id="browsing">
+
+            <a class="link" href="#">
+                <div class="navButton" id="playButton"><img src="assets/svg/play.svg"><span class="navText">Juega <b>ahora</b></span></div>
+            </a>
+
+            <a class="link" href="#newsSection">
+                <div class="navButton" id="newsButton"><img src="assets/svg/form.svg"><span class="navText">News</span></div>
+            </a>
+
+            <a class="link" href="#sourceSection">
+                <div class="navButton" id="sourceButton"><img src="assets/svg/code.svg"><span class="navText">Source</span></div>
+            </a>
+
+        </nav>
+
+        <!-- Descripción -->
+        <section id="playSection">
+
+            <div id="presentation">
+                <div><h1 id="title">Mokepon</h1></div>
+                <div><p id="overview">Juega Mokepon gratis hoy y comienza <b>tu propia aventura Pokémon open source!</b></p></div>
+            </div>
+
+            <div id="mokeview">
+                <div id="mokecards"><img src="assets/svg/mokecard.svg"></div>
+                <div id="arrows"></div>
+            </div>
+
+        </section>
+
+        <!-- Enterate -->
+        <section id="newsSection">
+
+            <h2 id="enterate">Enterate</h2>
+
+            <form action="/my-handling-form-page" method="post">
+
+                <input type="text"  name="name"  id="userName"  placeholder="Nombre">
+                <input type="email" name="email" id="userEmail" placeholder="Correo electrónico">
+
+                <p>¿Cuáles son tus intereses?</p>
+
+                <input type="checkbox" name="interests" id="updates">
+                <label class="check" for="updates">Actualizaciones</label>
+
+                <input type="checkbox" name="interests" id="tourney">
+                <label class="check" for="tourney">Torneos</label><br><br>
+
+                <input type="submit" value="Enviar" id="submit">
+
+            </form>
+
+            <div id="knownMoke">
+                <img src="">
+
+                <p class="mokeName" id="knownMokeName">Grosnow</p>
+                <p class="mokeHeart" id="knownMokeHeart">♥♥♥</p>
+            </div>
+            
+        </section>
+
+        <!-- Contribuye -->
+        <section id="sourceSection">
+
+            <div><img src=""></div>
+
+            <div>
+                <h2 id="contribuye">Contribuye</h2>
+
+                <table id="contributeTable">
+                    <tr>
+                        <td><img src=""><b>Follow</b> Mokepon</td>
+                        <td><img src=""><b>Contribute</b> to Mokepon</td>
+                    </tr>
+
+                    <tr>
+                        <td><img src=""><b>Share</b> Mokepon</td>
+                        <td><img src=""><b>Donate</b> to Mokepon</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+
+    </div>
+
+    </body>
