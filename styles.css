@@ -32,12 +32,12 @@ body {
 
 /* Menú */
 nav {
-    margin-top: 2rem;
     font-size: 2rem;
     font-size: 'Whyte Inktrap';
     /* background-image: linear-gradient(var(--night), hsla(0, 0%, 0%, 0)); */
     display: flex;
     justify-content: center;
+    align-items: center;
 
     position: fixed;
     z-index: 1000;
@@ -96,7 +96,7 @@ h1 {
 }
 
 #presentation {
-    float: inline-start;
+    float: left;
 }
 
 #title {
@@ -114,6 +114,7 @@ h1 {
 }
 
 #mokeview {
+    float: right;
     vertical-align: middle;
     justify-content: center;
 }
@@ -182,9 +183,13 @@ h1 {
     background-color: var(--night);
 }
 
+#userData {
+    margin-bottom: 2rem;
+}
+
 #userInterests {
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 700;   
 }
 
 input {
@@ -203,10 +208,17 @@ input {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-select: none;
+    justify-content: center;
+}
+
+.custumeCheck {
+    color: var(--yellow);
+    font-size: 2.5rem;
+    margin-right: 0.5rem;
 }
 
 input[type=checkbox] {
-	visibility: hidden;
+	display: none;
 }
 
 ::placeholder {

@@ -7,9 +7,6 @@
         <meta name= "description" content="Colecciona monstruos y vive intensas batallas"       >
         <meta name= "keywords"    content="mokepon monstruos bolsillo juego open source"        >
 
-        <meta name= "viewport"             content="width=device-width, initial-scale=1.0"      >
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"                                    >
-
         <!-- Social Media -->
         <meta property="og:title"       content="Mokepon"                                       >
         <meta property="og:description" content="Colecciona monstruos y vive intensas batallas" >
@@ -71,16 +68,18 @@
 
             <form action="/my-handling-form-page" method="post">
 
-                <input type="text"  name="name"  id="userName"  placeholder="Nombre">
-                <input type="email" name="email" id="userEmail" placeholder="Correo electrónico">
+                <div id="userData">
+                    <input type="text"  name="name"  id="userName"  placeholder="Nombre">
+                    <input type="email" name="email" id="userEmail" placeholder="Correo electrónico">
+                </div>
 
                 <p id="userInterests">¿Cuáles son tus intereses?</p>
 
                 <input type="checkbox" name="interests" id="updates">
-                <label class="check" for="updates">Actualizaciones</label>
+                <label class="check" for="updates"><span class="custumeCheck" id="updatesCheck"></span><span class="labelText">Actualizaciones</span></label>
 
                 <input type="checkbox" name="interests" id="tourney">
-                <label class="check" for="tourney">Torneos</label><br><br>
+                <label class="check" for="tourney"><span class="custumeCheck" id="tourneyCheck"></span>Torneos</label><br><br>
 
                 <input type="submit" value="Enviar" id="submit">
 
@@ -120,4 +119,6 @@
 
     </div>
 
+    <script src="index.js"></script>
     </body>
+</html>
