@@ -55,7 +55,11 @@
 
             <div id="mokeview">
                 <div id="mokecards"><img src="assets/svg/mokecard.svg"></div>
-                <div id="arrows"></div>
+                
+                <div id="arrowsDiv">
+                    <span class="arrows" id="leftArrow">←</span>
+                    <span class="arrows" id="rightArrow">→</span>
+                </div>
             </div>
 
         </section>
@@ -70,7 +74,7 @@
                 <input type="text"  name="name"  id="userName"  placeholder="Nombre">
                 <input type="email" name="email" id="userEmail" placeholder="Correo electrónico">
 
-                <p>¿Cuáles son tus intereses?</p>
+                <p id="userInterests">¿Cuáles son tus intereses?</p>
 
                 <input type="checkbox" name="interests" id="updates">
                 <label class="check" for="updates">Actualizaciones</label>

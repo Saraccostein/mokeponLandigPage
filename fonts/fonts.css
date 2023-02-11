@@ -25,7 +25,7 @@
 {
   font-family: 'Whyte Inktrap';
   font-style: normal;
-  font-weight: normal;
+  font-weight: 300;
   src: url('WhyteInktrap-Light.woff2') format('woff2'),
        url('WhyteInktrap-Light.woff') format('woff');
 }
@@ -34,6 +34,14 @@
   font-family: 'Whyte Inktrap';
   font-style: normal;
   font-weight: 500;
+  src: url('WhyteInktrap-Regular.woff2') format('woff2'),
+       url('WhyteInktrap-Regular.woff') format('woff');
+}
+@font-face
+{
+  font-family: 'Whyte Inktrap';
+  font-style: normal;
+  font-weight: 700;
   font-display: swap;
   src: url('WhyteInktrap-Bold.woff2') format('woff2'),
        url('WhyteInktrap-Bold.woff') format('woff');

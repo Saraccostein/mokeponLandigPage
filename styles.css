@@ -25,7 +25,7 @@ body {
     font-family: 'Whyte Inktrap';
 }
 
-.wrap { 
+#wrap { 
     width: 1400px;
     margin: auto;
 }
@@ -52,7 +52,7 @@ a {
     width: 4rem;
     vertical-align: middle;
     outline: none;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 1.5rem 0 0.4rem;
 }
 
@@ -61,17 +61,13 @@ a {
 }
 
 .navButton {
-    height: 4.5rem;
+    height: 4rem;
     list-style-type: none;
     text-align: center;
     vertical-align: middle;
     border-radius: 7rem;
     padding: 0.6rem;
     margin: 0 var(--margin) 0 var(--margin);
-}
-
-.navButton:hover {
-    background-color: var(--blue);
 }
 
 #playButton {
@@ -96,7 +92,7 @@ a {
 
 /* Descripción */
 h1 {
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 #presentation {
@@ -117,9 +113,13 @@ h1 {
     margin-top: 0;
 }
 
+#mokeview {
+    vertical-align: middle;
+    justify-content: center;
+}
+
 #mokecards {
     width: 40rem;
-    float: inline-end;
     margin-top: 10rem;
 }
 
@@ -127,10 +127,98 @@ h1 {
     padding-top: 4rem;
 }
 
+#arrowsDiv {
+    width: 10%;
+}
+
+.arrows {
+    font-family: 'Whyte Inktrap', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: var(--nav_dark);
+    width: 4rem;
+    text-align: center;
+}
+
+.arrows:hover {
+    background-color: var(--green);
+    color: var(--night);
+}
+
+#leftArrow {
+    border-radius: 2rem 0 0 2rem;
+    float: inline-start;
+}
+
+#rightArrow {
+    border-radius: 0 2rem 2rem 0;
+    float: inline-end;
+}
+
+/* Enterate */
+#newsSection {
+    background-color: var(--gray);
+}
+
+#enterate {
+    margin-bottom: 0;
+}
+
+#userName {
+    text-align: center;
+    width: 6rem;
+    height: 1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    background-color: var(--night);
+    margin-right: 1rem;
+}
+
+#userEmail {
+    width: 20rem;
+    height: 1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    background-color: var(--night);
+}
+
+#userInterests {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+input {
+    outline: none;
+    font-family: 'Whyte Inktrap', monospace;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--white);
+    border-style: none;
+}
+
+.check {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-right: 1rem;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+input[type=checkbox] {
+	visibility: hidden;
+}
+
+::placeholder {
+    color: var(--gray);
+    text-align: center;
+}
+
 /* News */
 h2 {
-    font-size: 7rem;
+    font-size: 6rem;
 }
+
 #enterate {
     color: var(--yellow);
 }
