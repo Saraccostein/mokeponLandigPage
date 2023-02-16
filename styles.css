@@ -17,15 +17,19 @@
     --navPaddig: 1.8rem;
     --navImgPaddig: 0.6rem;
     --subButton: 19rem;
+    --arrowMargin: 0.3rem;
+    --submitPaddingWidth: 2rem;
+    --submitPaddingheight: 0.5rem;
 }
 
 body {
     background-color: var(--night);
     color: var(--purple);
-    font-family: 'Whyte Inktrap';
+    font-family: 'Whyte Inktrap', monospace;
 }
 
-#wrap { 
+#wrap {
+    display: grid;
     width: 1400px;
     margin: auto;
 }
@@ -33,7 +37,6 @@ body {
 /* Menú */
 nav {
     font-size: 2rem;
-    font-size: 'Whyte Inktrap';
     /* background-image: linear-gradient(var(--night), hsla(0, 0%, 0%, 0)); */
     display: flex;
     justify-content: center;
@@ -41,7 +44,9 @@ nav {
 
     position: fixed;
     z-index: 1000;
-}
+
+  justify-self: center;
+}   
 
 a {
     text-decoration: none;
@@ -100,7 +105,7 @@ h1 {
 }
 
 #title {
-    margin-bottom: 0;
+    margin-bottom: 1rem;
     width: 40rem;
 }
 
@@ -116,7 +121,8 @@ h1 {
 #mokeview {
     float: right;
     vertical-align: middle;
-    justify-content: center;
+    display:grid;
+    place-items: center;
 }
 
 #mokecards {
@@ -129,7 +135,7 @@ h1 {
 }
 
 #arrowsDiv {
-    width: 10%;
+    margin-top: 1rem;
 }
 
 .arrows {
@@ -140,7 +146,6 @@ h1 {
     width: 4rem;
     text-align: center;
 }
-
 .arrows:hover {
     background-color: var(--green);
     color: var(--night);
@@ -149,16 +154,19 @@ h1 {
 #leftArrow {
     border-radius: 2rem 0 0 2rem;
     float: inline-start;
+    margin-right: var(--arrowMargin);
 }
 
 #rightArrow {
     border-radius: 0 2rem 2rem 0;
     float: inline-end;
+    margin-left: var(--arrowMargin);
 }
 
 /* Enterate */
 #newsSection {
-    background-color: var(--gray);
+    align-self: center;
+  justify-self: center;
 }
 
 #enterate {
@@ -166,6 +174,7 @@ h1 {
 }
 
 #userName {
+    font-family: 'Whyte', sans-serif;
     text-align: center;
     width: 6rem;
     height: 1rem;
@@ -176,6 +185,7 @@ h1 {
 }
 
 #userEmail {
+    font-family: 'Whyte', sans-serif;
     width: 20rem;
     height: 1rem;
     border-radius: 0.7rem;
@@ -194,7 +204,6 @@ h1 {
 
 input {
     outline: none;
-    font-family: 'Whyte Inktrap', monospace;
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--white);
@@ -224,11 +233,21 @@ input[type=checkbox] {
 ::placeholder {
     color: var(--gray);
     text-align: center;
+    font-family: 'Whyte Inktrap', monospace;
 }
 
 /* News */
 h2 {
     font-size: 6rem;
+}
+
+#form {
+    float: left;
+}
+
+#knownMoke {
+    float: right;
+    width: 20rem;
 }
 
 #enterate {
@@ -242,8 +261,14 @@ h2 {
 
 #submit {
     font-family: 'Whyte', sans-serif;
+    font-weight: 700;
+    padding: var(--submitPaddingheight) var(--submitPaddingWidth) var(--submitPaddingheight) var(--submitPaddingWidth);
     color: var(--night);
     background-color: var(--purple);
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
 
+#sourceSection {
+    align-self: center;
+  justify-self: center;
 }
